@@ -1,0 +1,57 @@
+.title {
+  -webkit-text-fill-color: #fcf6e6; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  padding: 0 10vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+a.home-link {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+article.book-review {
+  display: flex;
+  border-bottom: 1px solid #d5d5d5;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+}
+article.book-review:last-child {
+  border-bottom: none;
+}
+
+section.book-review-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  article.book-review {
+    flex-direction: column;
+  }
+}
