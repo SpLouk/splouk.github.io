@@ -1,7 +1,17 @@
+* {
+  font-family: 'Helvetica', sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
 .title {
   -webkit-text-fill-color: #fcf6e6; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  margin: 64px 0;
+  font-family: 'Georgia', serif;
 }
 
 body {
@@ -22,7 +32,7 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
+  margin-bottom: 64px;
 }
 
 a {
@@ -30,12 +40,16 @@ a {
   color: black;
 }
 
+a.article-link {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
 a.home-link {
   outline: none;
   text-decoration: none;
   color: black;
 }
-
 
 a:hover,
 a:focus {
@@ -58,8 +72,17 @@ section.book-review-column {
   flex-direction: column;
 }
 
+section.book-review-left-column {
+  max-width: 118px;
+}
+
 @media (max-width: 480px) {
   article.book-review {
     flex-direction: column;
   }
+}
+
+.image-caption {
+  margin: 0;
+  color: #606060;
 }
