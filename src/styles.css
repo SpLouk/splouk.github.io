@@ -1,5 +1,5 @@
 * {
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
 h1 {
@@ -11,7 +11,7 @@ h1 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   margin: 64px 0;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
 }
 
 body {
@@ -24,11 +24,25 @@ body {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: image-set(
+      url(./header-cropped-small.jpg) 1x,
+      url(./header-cropped.jpg) 2x
+    )
+    no-repeat right/cover;
+  height: 400px;
+}
+@media (max-width: 1000px) {
+  header {
+    height: 200px;
+    background-position: center;
+  }
 }
 
 main {
   max-width: 1000px;
-  padding: 0 5vw;
+  padding: 64px 5vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
