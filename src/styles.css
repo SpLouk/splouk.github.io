@@ -46,7 +46,6 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 64px;
 }
 
 a {
@@ -94,6 +93,10 @@ div.left-image {
   margin-right: 16px;
 }
 
+div.right-image {
+  margin-left: 16px;
+}
+
 .image-caption {
   margin: 0;
   color: #606060;
@@ -101,6 +104,10 @@ div.left-image {
 
 .responsive-row {
   display: flex;
+}
+
+img {
+  max-width: 100%;
 }
 
 @media (max-width: 480px) {
@@ -117,5 +124,8 @@ div.left-image {
 
   div.left-image {
     margin-right: 0;
+  }
+  div.right-image {
+    margin-left: 0;
   }
 }
