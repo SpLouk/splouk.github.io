@@ -41,7 +41,7 @@ header {
 }
 
 main {
-  max-width: 1000px;
+  max-width: min(100vw, 1000px);
   padding: 64px 5vw;
   display: flex;
   justify-content: center;
@@ -90,13 +90,32 @@ section.book-review-left-column {
   max-width: 118px;
 }
 
-@media (max-width: 480px) {
-  article.book-review {
-    flex-direction: column;
-  }
+div.left-image {
+  margin-right: 16px;
 }
 
 .image-caption {
   margin: 0;
   color: #606060;
+}
+
+.responsive-row {
+  display: flex;
+}
+
+@media (max-width: 480px) {
+  article.book-review {
+    flex-direction: column;
+  }
+  .responsive-row {
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+    margin: 0;
+  }
+
+  div.left-image {
+    margin-right: 0;
+  }
 }
