@@ -27,8 +27,8 @@ header {
   align-items: center;
   width: 100%;
   background: image-set(
-      url(./header-cropped-small.jpg) 1x,
-      url(./header-cropped.jpg) 2x
+      url(./header-cropped-small.jpg) 0.5x,
+      url(./header-cropped.jpg) 1x
     )
     no-repeat right/cover;
   height: 400px;
