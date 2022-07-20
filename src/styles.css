@@ -32,6 +32,7 @@ header {
     )
     no-repeat right/cover;
   height: 400px;
+  position: relative;
 }
 @media (max-width: 1000px) {
   header {
@@ -119,6 +120,24 @@ div.right-image {
 
 img {
   max-width: 100%;
+}
+
+p.photo-attribution {
+  font-size: 10px;
+  margin: 0;
+  text-align: end;
+}
+
+a.home-banner-attribution {
+  position: absolute;
+  font-size: 10px;
+  color: #A8D8DD;
+  bottom: 8px;
+  right: 8px;
+  text-decoration: none;
+}
+a.home-banner-attribution:hover, a.home-banner-attribution:focus  {
+  color: white;
 }
 
 @media (max-width: 480px) {
