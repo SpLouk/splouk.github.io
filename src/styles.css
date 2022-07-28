@@ -35,6 +35,13 @@ header {
     )
     no-repeat right/cover;
 }
+
+.main-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px 0;
+}
+
 @media (max-width: 1000px) {
   header {
     height: 200px;
@@ -44,7 +51,7 @@ header {
 
 main {
   max-width: min(100vw, 1000px);
-  padding: 64px 5vw;
+  padding: 32px 5vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -75,6 +82,12 @@ a:focus {
 p.subtitle {
   color: #737373;
   margin-bottom: 0;
+}
+
+p.article-date {
+  color: #737373;
+  margin-bottom: 0;
+  justify-self: end;
 }
 
 article.book-review {
