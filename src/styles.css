@@ -6,6 +6,10 @@ h1 {
   margin: 0;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .title {
   -webkit-text-fill-color: #fcf6e6; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
@@ -34,6 +38,18 @@ header {
       url(./header-cropped.jpg) 1x
     )
     no-repeat right/cover;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 24px;
+  border-left: 3px solid #b6f3e4;
+  line-height: 1.5;
+}
+
+header.breadmakers-story {
+  background: url(./header-breadmakers.jpg) center/contain;
+  background-color: #0f0d12;
 }
 
 .main-nav {
@@ -81,7 +97,6 @@ a:focus {
 
 p.subtitle {
   color: #737373;
-  margin-bottom: 0;
 }
 
 p.article-date {
@@ -173,4 +188,69 @@ a.home-banner-attribution:focus {
   div.right-image {
     margin-left: 0;
   }
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  border: none;
+  font: inherit;
+  outline: inherit;
+  cursor: pointer;
+  padding: 16px;
+  background: #61b0e8;
+  color: white;
+}
+button:hover,
+button:focus {
+  background: #326582;
+}
+
+p.subscribe-callout,
+div.pageclip-form__success {
+  margin-top: 0;
+  color: #737373;
+}
+
+form.pageclip-form--error > button {
+  background: #b24d3b;
+}
+
+form.pageclip-form--error > input {
+  border: 1px solid #b24d3b;
+}
+
+input {
+  font: inherit;
+  outline: inherit;
+  padding: 8px;
+  border: 1px solid #61b0e8;
+}
+input:focus,
+input:hover {
+  border: 1px solid #326582;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: min(100vw, 1000px);
+  border-top: 1px solid #b6f3e4;
+  padding: 64px 5vw;
+}
+
+p.first-paragraph::first-letter {
+  font-size: 64px;
+  line-height: 0.75;
+  font-family: "Times New Roman", Times, serif;
+  float: inline-start;
+  font-weight: bold;
+  margin-right: 9px;
+  color: #479aaa;
+  text-shadow: #326582 0.05em 0.05em;
+}
+
+p.first-paragraph {
+  margin-top: 32px;
 }
