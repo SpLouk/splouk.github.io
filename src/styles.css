@@ -3,11 +3,20 @@
 }
 
 h1 {
+  font-family: 'Georgia', serif;
+  font-weight: normal;
   margin: 0;
 }
 
+h1.article-title {
+  font-size: 8em;
+  color: #aa4a47;
+  text-shadow: #333 0.02em 0.02em;
+}
+
+
 p {
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 ul {
@@ -15,11 +24,13 @@ ul {
 }
 
 .title {
-  -webkit-text-fill-color: #fcf6e6; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  margin: 64px 0;
   font-family: "Georgia", serif;
+  font-size: 1.5em;
+  margin: 0;
+  color: #333;
+}
+.title:hover {
+  color: #1b1b1b;
 }
 
 body {
@@ -29,19 +40,24 @@ body {
   margin: 0;
 }
 
+.background-image {
+  position: absolute;
+  width: 100vw;
+  height: 42vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 80%;
+}
+
 header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 400px;
-  position: relative;
-  background: url(./header-cropped.jpg) no-repeat right/cover;
-  background: image-set(
-      url(./header-cropped-small.jpg) 0.5x,
-      url(./header-cropped.jpg) 1x
-    )
-    no-repeat right/cover;
+  max-width: min(100vw, 1100px);
+  height: 200px;
+  padding: 0 5vw;
+  box-sizing: border-box;
 }
 
 blockquote {
@@ -58,7 +74,8 @@ header.breadmakers-story {
 
 .main-nav {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 1.5em;
   padding: 16px 0;
 }
 
@@ -70,11 +87,12 @@ header.breadmakers-story {
 }
 
 main {
-  max-width: min(100vw, 1000px);
-  padding: 32px 5vw;
+  max-width: min(100vw, 1100px);
+  padding: 5vh 5vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 a {
@@ -101,6 +119,7 @@ a:focus {
 
 p.subtitle {
   color: #737373;
+  margin: 64px 0 0 0;
 }
 
 p.article-date {
@@ -179,6 +198,9 @@ div.big-image {
 }
 
 @media (max-width: 480px) {
+  h1.article-title {
+    font-size: 4em;
+  }
   article.book-review {
     flex-direction: column;
   }
@@ -260,7 +282,7 @@ p.first-paragraph::first-letter {
   font-weight: bold;
   margin-right: 9px;
   color: #479aaa;
-  text-shadow: #326582 0.05em 0.05em;
+  text-shadow: #aa4a47 0.05em 0.05em;
 }
 
 p.first-paragraph {
