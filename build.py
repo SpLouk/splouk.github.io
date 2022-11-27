@@ -6,7 +6,10 @@ import shutil
 import os
 import json
 import chevron
+from datetime import datetime
 
+def format_date(dt: datetime):
+    return dt.strftime('%B %d, %Y')
 
 def generate_articles():
     articles = []
@@ -14,6 +17,10 @@ def generate_articles():
         if "article.json" in files:
             metadata = generate_article_get_metadata(root)
             articles.append(metadata)
+
+    # Sort articles; we expect date formatted as "%B %d, %Y"
+    # https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes
+    articles.sort(key=lambda metadata: datetime.strptime(metadata['date'], "%B %d, %Y"), reverse=True)
     generate_index(articles)
 
 def generate_index(articles):
@@ -53,6 +60,7 @@ def generate_article_get_metadata(root: str):
         })
 
     # Write the file
+    metadata['url'] = root.split("/")[-1]
     with open(f"./build/{metadata['url']}.html", "w") as output_file:
         output_file.write(html_output)
     
@@ -67,6 +75,8 @@ def generate_article_get_metadata(root: str):
 if __name__ == "__main__":
     os.makedirs('build/resources', exist_ok=True)
     generate_articles()
+    shutil.copy("src/styles.css", "build/")
+    shutil.copy("src/header-cropped.jpg", "build/resources/")
 
 
 class MyHTMLParser(HTMLParser):
