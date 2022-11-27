@@ -75,7 +75,7 @@ header.breadmakers-story {
 .main-nav {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-gap: 1.5em;
+  grid-gap: 2em;
   padding: 16px 0;
 }
 
@@ -88,6 +88,8 @@ header.breadmakers-story {
 
 main {
   max-width: min(100vw, 1100px);
+  border-radius: 40px;
+  background-color: white;
   padding: 5vh 5vw;
   display: flex;
   justify-content: center;
@@ -117,15 +119,14 @@ a:focus {
   outline: none;
 }
 
-p.subtitle {
+p.article-list-date {
   color: #737373;
-  margin: 64px 0 0 0;
+  margin: 0;
 }
 
 p.article-date {
   color: #737373;
-  margin-bottom: 0;
-  justify-self: end;
+  margin: 0 0 64px 0;
 }
 
 article.book-review {
