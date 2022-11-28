@@ -75,7 +75,8 @@ def build_site():
     os.makedirs('build/resources', exist_ok=True)
     generate_articles()
     shutil.copy("src/styles.css", "build/")
-    shutil.copy("src/header-cropped.jpg", "build/resources/")
+    shutil.copy("src/header.jpg", "build/resources/")
+    shutil.copy("src/header-small.jpg", "build/resources/")
 
 if __name__ == "__main__":
     build_site()

@@ -3,17 +3,20 @@
 }
 
 h1 {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-weight: normal;
   margin: 0;
 }
 
 h1.article-title {
-  font-size: 8em;
+  font-size: calc(1.5em + 6vw);
   color: #aa4a47;
   text-shadow: #333 0.02em 0.02em;
 }
 
+h1.section-title {
+  margin-top: 48px;
+}
 
 p {
   line-height: 1.7;
@@ -55,7 +58,8 @@ header {
   align-items: center;
   width: 100%;
   max-width: min(100vw, 1100px);
-  height: 200px;
+  margin-top: 50px;
+  height: 50px;
   padding: 0 5vw;
   box-sizing: border-box;
 }
@@ -67,27 +71,15 @@ blockquote {
   line-height: 1.5;
 }
 
-header.breadmakers-story {
-  background: url(./header-breadmakers.jpg) center/contain;
-  background-color: #0f0d12;
-}
-
 .main-nav {
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-gap: 2em;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2em 5px;
   padding: 16px 0;
 }
 
-@media (max-width: 1000px) {
-  header {
-    height: 200px;
-    background-position: center;
-  }
-}
-
 main {
-  max-width: min(100vw, 1100px);
+  max-width: min(97vw, 1000px);
   border-radius: 40px;
   background-color: white;
   padding: 5vh 5vw;
@@ -122,6 +114,7 @@ a:focus {
 p.article-list-date {
   color: #737373;
   margin: 0;
+  text-align: end;
 }
 
 p.article-date {
@@ -199,9 +192,6 @@ div.big-image {
 }
 
 @media (max-width: 480px) {
-  h1.article-title {
-    font-size: 4em;
-  }
   article.book-review {
     flex-direction: column;
   }
@@ -293,4 +283,11 @@ p.first-paragraph {
 div.spacer {
   height: 16px;
   width: 16px;
+}
+
+.youtube-wrapper {
+  align-self: center;
+  max-width: 560px;
+  width: 100%;
+  flex-basis: 315px;
 }

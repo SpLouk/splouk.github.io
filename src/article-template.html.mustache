@@ -25,7 +25,14 @@
     </script>
   </head>
   <body>
-    <img class="background-image" src="./resources/header-cropped.jpg" />
+    <img
+      class="background-image"
+      srcset="resources/header-small.jpg 1024w, resources/header.jpg 4096w"
+      sizes="(max-width: 1000px) 1024px,
+            4096px"
+      src="resources/header.jpg"
+      alt="People sitting on a grassy hill and looking at a city skyline"
+    />
     <header>
       <a class="home-link" href="./index.html">
         <p class="title">David Loukidelis</p>
