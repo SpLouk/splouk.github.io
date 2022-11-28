@@ -13,6 +13,12 @@ h1.article-title {
   color: #aa4a47;
   text-shadow: #333 0.02em 0.02em;
 }
+/* Prevent font from getting huge on large desktops */
+@media (min-width: 1920px) {
+  h1.article-title {
+    font-size: 7em;
+  }
+}
 
 h1.section-title {
   margin-top: 48px;
