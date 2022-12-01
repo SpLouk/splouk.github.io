@@ -32,13 +32,15 @@ ul {
   margin: 0;
 }
 
-.title {
+.home-link-title {
   font-family: "Georgia", serif;
   font-size: 1.5em;
   margin: 0;
   color: #333;
+  background-color: white;
+  padding: 0 16px;
 }
-.title:hover {
+.home-link-title:hover {
   color: #1b1b1b;
 }
 
@@ -50,12 +52,11 @@ body {
 }
 
 .background-image {
-  position: absolute;
+  position: fixed;
   width: 100vw;
-  height: 42vh;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
-  opacity: 80%;
 }
 
 header {
@@ -63,10 +64,8 @@ header {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  max-width: min(100vw, 1100px);
-  margin-top: 50px;
-  height: 50px;
-  padding: 0 5vw;
+  max-width: min(100vw, 1000px);
+  margin-top: 20vh;
   box-sizing: border-box;
 }
 
@@ -85,8 +84,7 @@ blockquote {
 }
 
 main {
-  max-width: min(97vw, 1000px);
-  border-radius: 40px;
+  max-width: min(100vw, 1000px);
   background-color: white;
   padding: 5vh 5vw;
   display: flex;
@@ -267,8 +265,10 @@ footer {
   flex-direction: column;
   align-items: center;
   max-width: min(100vw, 1000px);
-  border-top: 1px solid #b6f3e4;
+  width: 100%;
   padding: 64px 5vw;
+  box-sizing: border-box;
+  background-color: white;
 }
 
 p.first-paragraph::first-letter {
