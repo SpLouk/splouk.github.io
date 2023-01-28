@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 from html.entities import name2codepoint
 import shutil
 import os
+import glob
 import json
 import chevron
 from datetime import datetime
@@ -44,7 +45,10 @@ def generate_index(articles):
 def generate_article_get_metadata(root: str):
     with open(f"{root}/article.json", "r") as f:
         metadata = json.load(f)
-    with open(f"{root}/content.html", "r") as f:
+    
+    article_file = glob.glob('*.html', root_dir=root)[0]
+    print(article_file)
+    with open(f"{root}/{article_file}", "r") as f:
         article_content = f.read()
     with open("./src/article-template.html.mustache", "r") as f:
         html_output = chevron.render(**{
