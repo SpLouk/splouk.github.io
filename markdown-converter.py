@@ -22,7 +22,8 @@ def main(args):
         f.write(html_text)
 
     resource_dir = file.replace(".md", "")
-    distutils.dir_util.copy_tree(f"{args.directory}/{resource_dir}", f"{article_dir}/resources")
+    if (os.path.exists(resource_dir)):
+        distutils.dir_util.copy_tree(f"{args.directory}/{resource_dir}", f"{article_dir}/resources")
 
 
 if __name__ == "__main__":
