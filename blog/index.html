@@ -2,19 +2,18 @@
 layout: default
 title: Loukidelis.com
 ---
+
 <p style="margin: 0">
   I am a software engineer by trade, available for freelance and consulting.
-  These are my writings; mostly non-professional. You can also
-  find me on
-  <a href="https://bsky.app/profile/spyr0s.bsky.social" target="_blank">Bluesky</a>
+  These are my writings; mostly non-professional. You can also find me on
+  <a href="https://bsky.app/profile/spyr0s.bsky.social" target="_blank"
+    >Bluesky</a
+  >
   and <a href="https://github.com/splouk" target="_blank">Github</a>.
 </p>
-<h1 style="margin: 64px 0 32px 0; color: #333; font-size: 4em">Posts</h1>
 <nav class="main-nav">
   {% for post in site.posts %}
-    <a class="article-link" href="{{ post.url }}">
-      {{ post.title }}
-    </a>
-    <p class="article-list-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+  <a class="article-link" href="{{ post.url }}"> {{ post.title }} </a>
+  <p class="article-list-date">{{ post.date | date: "%B %-d, %Y" }}</p>
   {% endfor %}
 </nav>
