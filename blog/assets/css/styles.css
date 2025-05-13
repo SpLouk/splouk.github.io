@@ -1,0 +1,299 @@
+* {
+  font-family: "Helvetica", sans-serif;
+}
+
+h1 {
+  font-family: "Georgia", serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+h1.article-title {
+  font-size: calc(1.5em + 3vw);
+  color: #aa4a47;
+  text-shadow: #333 0.02em 0.02em;
+}
+/* Prevent font from getting huge on large desktops */
+@media (min-width: 1920px) {
+  h1.article-title {
+    font-size: 7em;
+  }
+}
+
+h1.section-title {
+  margin-top: 48px;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  margin: 0;
+}
+
+.home-link-title {
+  font-family: "Georgia", serif;
+  font-size: 1.5em;
+  margin: 0;
+  color: #333;
+  background-color: white;
+  padding: 0 16px;
+}
+.home-link-title:hover {
+  color: #1b1b1b;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.background-image {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: min(100vw, 1000px);
+  margin-top: 20vh;
+  box-sizing: border-box;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 24px;
+  border-left: 3px solid #b6f3e4;
+  line-height: 1.5;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2em 5px;
+  padding: 16px 0;
+}
+
+main {
+  max-width: min(100vw, 1000px);
+  background-color: white;
+  padding: 5vh 5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+a.article-link {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+a.home-link {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+p.article-list-date {
+  color: #737373;
+  margin: 0;
+  text-align: end;
+}
+
+p.article-date {
+  color: #737373;
+  margin: 0 0 32px 0;
+}
+
+article.book-review {
+  display: flex;
+  border-bottom: 1px solid #d5d5d5;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+}
+article.book-review:last-child {
+  border-bottom: none;
+}
+
+section.book-review-column {
+  display: flex;
+  flex-direction: column;
+}
+
+section.book-review-left-column {
+  flex-shrink: 0;
+  flex-basis: 25%;
+  margin-right: 16px;
+  align-items: flex-start;
+}
+section.book-review-left-column img {
+  width: 100px;
+}
+
+div.left-image {
+  margin-right: 16px;
+}
+
+div.right-image {
+  margin-left: 16px;
+}
+
+.image-caption {
+  margin: 0;
+  color: #606060;
+}
+
+.responsive-row {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+p.photo-attribution {
+  font-size: 10px;
+  margin: 0;
+  text-align: end;
+}
+
+a.home-banner-attribution {
+  position: absolute;
+  font-size: 10px;
+  color: #a8d8dd;
+  bottom: 8px;
+  right: 8px;
+  text-decoration: none;
+}
+a.home-banner-attribution:hover,
+a.home-banner-attribution:focus {
+  color: white;
+}
+
+div.big-image {
+  padding: 0 64px;
+}
+
+@media (max-width: 480px) {
+  article.book-review {
+    flex-direction: column;
+  }
+  .responsive-row {
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+    margin: 0;
+  }
+
+  div.left-image {
+    margin-right: 0;
+  }
+  div.right-image {
+    margin-left: 0;
+  }
+
+  div.big-image {
+    padding: 0;
+  }
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  border: none;
+  font: inherit;
+  outline: inherit;
+  cursor: pointer;
+  padding: 16px;
+  background: #61b0e8;
+  color: white;
+}
+button:hover,
+button:focus {
+  background: #326582;
+}
+
+p.subscribe-callout,
+div.pageclip-form__success {
+  margin-top: 0;
+  color: #737373;
+}
+
+form.pageclip-form--error > button {
+  background: #b24d3b;
+}
+
+form.pageclip-form--error > input {
+  border: 1px solid #b24d3b;
+}
+
+input {
+  font: inherit;
+  outline: inherit;
+  padding: 8px;
+  border: 1px solid #61b0e8;
+}
+input:focus,
+input:hover {
+  border: 1px solid #326582;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: min(100vw, 1000px);
+  width: 100%;
+  padding: 64px 5vw;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+p.first-paragraph::first-letter {
+  font-size: 64px;
+  line-height: 0.75;
+  font-family: "Times New Roman", Times, serif;
+  float: inline-start;
+  font-weight: bold;
+  margin-right: 9px;
+  color: #479aaa;
+  text-shadow: #aa4a47 0.05em 0.05em;
+}
+
+p.first-paragraph {
+  margin-top: 32px;
+}
+
+div.spacer {
+  height: 16px;
+  width: 16px;
+}
+
+.youtube-wrapper {
+  align-self: center;
+  max-width: 560px;
+  width: 100%;
+  flex-basis: 315px;
+}

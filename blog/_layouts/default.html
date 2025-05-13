@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if page.title %}{{ page.title }} – Loukidelis.com{% else %}Loukidelis.com{% endif %}</title>
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P176X05K5L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P176X05K5L');
+    </script>
+  </head>
+  <body>
+    <img
+      class="background-image"
+      srcset="/assets/images/header-small.jpg 1024w, /assets/images/header.jpg 4096w"
+      sizes="(max-width: 1000px) 1024px, 4096px"
+      src="/assets/images/header.jpg"
+      alt="People sitting on a grassy hill and looking at a city skyline"
+    />
+    <header>
+      <a class="home-link" href="/index.html">
+        <p class="home-link-title">David Loukidelis</p>
+      </a>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <p class="subscribe-callout">
+        You can get emails when I post new content by adding your email address here:
+      </p>
+      <form action="https://send.pageclip.co/dCJyLsR33udW0C8aXndUWnlKk0WQWBYI" class="pageclip-form" method="post">
+        <input type="email" name="email" value="" placeholder="email@example.com" />
+        <button class="button pageclip-form__submit" type="submit">
+          <span>Subscribe</span>
+        </button>
+      </form>
+      <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+      <a style="margin-top: 32px" href="https://www.lipchenko.com/" target="_blank">Art by Oleg Lipchenko</a>
+    </footer>
+  </body>
+</html>
