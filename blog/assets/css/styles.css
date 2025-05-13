@@ -262,8 +262,9 @@ input:hover {
 
 footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
   max-width: min(100vw, 1000px);
   width: 100%;
   padding: 64px 5vw;
