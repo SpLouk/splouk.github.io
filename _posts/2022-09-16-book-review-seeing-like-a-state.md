@@ -35,7 +35,7 @@ categories: old
 <div class="responsive-row">
   <div class="left-image" style="flex-basis: 50%; flex-shrink: 0">
     <img
-      src="assets/images/Tractors_in_Potato_Field.jpg"
+      src="/assets/images/book-review-seeing-like-a-state/Tractors_in_Potato_Field.jpg"
       alt="Potatoes planted in monoculture"
     />
     <p class="image-caption">Potatoes planted in monoculture</p>
@@ -83,7 +83,7 @@ categories: old
 <div class="responsive-row">
   <div class="left-image" style="flex-basis: 50%; flex-shrink: 0">
     <img
-      src="assets/images/Plan_Voisin_model.jpg"
+      src="/assets/images/book-review-seeing-like-a-state/Plan_Voisin_model.jpg"
       alt="High modernist architect Le Corbusier’s plan to remake Paris, France to be more organized and “effecient”."
     />
     <p class="image-caption">
@@ -93,7 +93,7 @@ categories: old
   </div>
   <div class="right-image" style="flex-basis: 50%; flex-shrink: 0">
     <img
-      src="assets/images/Tokyo_from_the_top_of_the_SkyTree.jpg"
+      src="/assets/images/book-review-seeing-like-a-state/Tokyo_from_the_top_of_the_SkyTree.jpg"
       alt="Modern day Tokyo, Japan."
     />
     <p class="image-caption">Modern day Tokyo, Japan.</p>
