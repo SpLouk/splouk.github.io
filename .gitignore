@@ -1,5 +1,11 @@
+# vi files
 *.swp
 *.swo
 *.DS_Store
-build/*
-__pycache__/*
+
+# jekyll
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
