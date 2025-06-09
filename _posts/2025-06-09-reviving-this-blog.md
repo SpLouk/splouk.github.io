@@ -3,7 +3,9 @@ layout: article
 title: "Reviving this blog"
 ---
 
+<p class="first-paragraph">
 I haven't written on this blog in a while. This is partly because I haven't felt like doing long-form writing. It's also because of the way this blog was built and deployed in the past, which made publishing a new piece more work than necessary.
+</p>
 
 For a while I've wanted a place to leave thoughts, no matter how short or inconsequential. I used to use Twitter for this, but I don't anymore for obvious reasons. I now use Bluesky sometimes, but I wanted a place of my own to write content of any length or complexity. I have had this website for a few years, but it wasn't really set up for "microblogging". Over the past few weeks, I've migrated this blog to Jekyll & Github pages in order to make it easy to contribute to. I also changed the homepage layout to a format that will make it easy to consume small posts and previews of larger posts without clicking into the article. My old homepage only showed the article title and date, whereas now it should be easy to read an entire short post without clicking on it.
 

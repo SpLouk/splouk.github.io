@@ -291,6 +291,7 @@ div.spacer {
 
 .main-nav > li {
   list-style: none;
+  line-height: 1.2;
 }
 
 .pagination {
