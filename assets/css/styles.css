@@ -92,7 +92,7 @@ blockquote {
 main {
   max-width: min(100vw, 1000px);
   background-color: white;
-  padding: 5vh 5vw;
+  padding: 5vh 5vw 0vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -258,7 +258,7 @@ footer {
   justify-content: center;
   max-width: min(100vw, 1000px);
   width: 100%;
-  padding: 64px 5vw;
+  padding: 2vh 5vw 10vh;
   box-sizing: border-box;
   background-color: white;
 }
@@ -300,10 +300,6 @@ div.spacer {
   flex-direction: row;
   justify-content: center;
   gap: 24px;
-}
-
-.pagination-text {
-  font-size: 1.2rem;
 }
 
 code {
