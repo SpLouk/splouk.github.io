@@ -20,6 +20,7 @@ categories: old
   little bit outwards and you’re more likely to find single-family detached
   homes than anything else. Take a look at this Google streetview photo:
 </p>
+<!--more-->
 <div class="big-image">
   <img
     src="/assets/images/on-montreal/Screenshot_2022-09-19_at_15-16-07_Google_Maps.png"

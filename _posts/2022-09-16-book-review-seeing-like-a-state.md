@@ -32,6 +32,7 @@ categories: old
   this philosophy in authoritarian settings like communist states and European
   colonies.
 </p>
+<!--more-->
 <div class="responsive-row">
   <div class="left-image" style="flex-basis: 50%; flex-shrink: 0">
     <img

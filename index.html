@@ -11,9 +11,32 @@ title: Loukidelis.com
   >
   and <a href="https://github.com/splouk" target="_blank">Github</a>.
 </p>
-<nav class="main-nav">
-  {% for post in site.posts %}
-  <a class="article-link" href="{{ post.url }}"> {{ post.title }} </a>
-  <p class="article-list-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+<ul class="main-nav">
+  {% for post in paginator.posts %}
+  <li>
+    <div
+      style="display: flex; flex-direction: row; justify-content: space-between"
+    >
+      <a class="article-link" href="{{ post.url }}"> {{ post.title }} </a>
+      <p class="article-list-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+    </div>
+    {{post.excerpt}}
+  </li>
   {% endfor %}
-</nav>
+</ul>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="previous"> Previous </a>
+  {% else %}
+  <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+  <span class="next">Next</span>
+  {% endif %}
+</div>

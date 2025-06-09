@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "On \"A Canticle for Leibowitz\""
+title: 'On "A Canticle for Leibowitz"'
 date: 2022-07-28
 categories: old
 ---
@@ -33,6 +33,7 @@ categories: old
   Sword of Damocles above our head, though the possibility of nuclear apocalypse
   will never go away.
 </p>
+<!--more-->
 <p>
   In some ways I think that new hazards have crept in to act as the fruit that
   entices us to destroy Eden. “The End of History” by Francis Fukuyama,

@@ -4,6 +4,7 @@ title: "On Land Ownership"
 date: 2022-08-19
 categories: old
 ---
+
 <blockquote>
   <p>
     <em>Negara mawi tata, desa mawi cara</em> (The capital has its order, the
@@ -31,6 +32,7 @@ categories: old
   destroying your whole crop of planted trees, or declining soil fertility which
   results in poor yields several generations down the line.
 </p>
+<!--more-->
 <p>
   Scott applies this lens to land use, which is where this book gets really
   good. As the modern state developed, it was tasked with “somehow attaching
@@ -259,3 +261,4 @@ categories: old
     thing.</em
   >
 </p>
+

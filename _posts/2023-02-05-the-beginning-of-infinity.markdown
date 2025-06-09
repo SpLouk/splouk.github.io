@@ -33,6 +33,7 @@ categories: old
   this book. That self-knowledge will need time to percolate. But I can try to
   list some of them.
 </p>
+<!--more-->
 <p>
   <strong>Progress is infinite.</strong> We are not “nearly there”. We don’t
   live at the end of a rapid period of scientific discovery in which our main

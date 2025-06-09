@@ -23,6 +23,7 @@ categories: old
   of these characters is rotten to their scheming, power hungry cores; they will
   never see the light.
 </p>
+<!--more-->
 <p>
   The Bear is a show about a kitchen and the staff who work in it. Carmy (Jeremy
   Allen White), gives up his career at a prestigious NYC restaurant after his

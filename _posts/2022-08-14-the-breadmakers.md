@@ -38,6 +38,7 @@ categories: old
   uncomfortable state. I did not know at this point that I had been abducted by
   aliens. I figured that out later.
 </p>
+<!--more-->
 <p id="f724d807-1151-4e3b-a583-8f092a08b28e" class="">
   The stone statue seemed to gaze at me under its prominent singular brow,
   though I could not discern actual eyes under the shadow. Its head resembled

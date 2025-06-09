@@ -78,9 +78,8 @@ blockquote {
 
 .main-nav {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 2em 5px;
-  padding: 16px 0;
+  gap: 10vh 0;
+  padding: 10vh 0;
 }
 
 main {
@@ -99,8 +98,9 @@ a {
 }
 
 a.article-link {
-  font-size: 18px;
-  margin: 8px 0;
+  color: #aa4a47;
+  text-shadow: #333 0.02em 0.02em;
+  font-size: 2em;
 }
 
 a.home-link {
@@ -119,6 +119,7 @@ p.article-list-date {
   color: #737373;
   margin: 0;
   text-align: end;
+  flex-shrink: 0;
 }
 
 p.article-date {
@@ -297,4 +298,8 @@ div.spacer {
   max-width: 560px;
   width: 100%;
   flex-basis: 315px;
+}
+
+li {
+  list-style: none;
 }

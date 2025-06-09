@@ -36,6 +36,7 @@ categories: old
   decent amount of accuracy – i.e. they would be able to guess that the song was
   released in the 1980s. Will we be able to identify 2020s music the same way?
 </p>
+<!--more-->
 <h1 class="section-title">Some Armchair History</h1>
 <p>
   Here’s my extremely reductive layman’s theory of modern music: movements in
@@ -136,7 +137,7 @@ categories: old
 </p>
 <div class="big-image">
   <img
-    src="resources/Screen_Shot_2022-11-13_at_10.48.16_PM.png"
+    src="/assets/images/on-music/Screen_Shot_2022-11-13_at_10.48.16_PM.png"
     alt="Screen Shot 2022-11-13 at 10.48.16 PM.png"
   />
 </div>

@@ -4,9 +4,11 @@ title: "Alone on the Playground"
 date: January 27, 2023
 categories: old
 ---
+
 <p>
   I grew up in what you might call a "streetcar suburb", though the streetcar was ripped out a long time before I was born. The neighbourhood I grew up in is a bit over 100 years old; grid streets, with brick houses spaced apart by gaps just wide enough to walk between. I walked to school. These kinds of neighbourhoods are fashionable now, and mine has lots of young families these days; when I visit my parents I see kids playing on the sidewalks. But when I was growing up I was lonely on weekends. I had friends at school who lived in newer suburbs. They would tell me stories about their Saturdays, waking up to streets and inter-connected backyards full of other kids their age, going out after breakfast and not coming in until dinner. They had their school friends and their neighbourhood friends. I had school friends and my computer. As I got older, I was able to roam further, and my social life benefited.
 </p>
+<!--more-->
 <p>
   <img src="/assets/images/alone-on-the-playground/2019-Revision--World-Population-Growth-1700-2100.png" alt="2019-Revision–World-Population-Growth-1700-2100.png" />
 </p>

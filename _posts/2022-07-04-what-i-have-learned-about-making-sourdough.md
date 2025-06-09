@@ -36,6 +36,7 @@ categories: old
   to be tossed! This would not do, so I decided to get serious about making
   sourdough.
 </p>
+<!--more-->
 <div class="responsive-row">
   <p>
     I downloaded an e-book copy of
