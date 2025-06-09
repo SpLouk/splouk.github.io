@@ -105,6 +105,7 @@ a {
 }
 
 a.article-link {
+  font-family: "Georgia", serif;
   color: #aa4a47;
   text-shadow: #333 0.02em 0.02em;
   font-size: 2em;
