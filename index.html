@@ -14,29 +14,30 @@ title: Loukidelis.com
 <ul class="main-nav">
   {% for post in paginator.posts %}
   <li>
-    <div
-      style="display: flex; flex-direction: row; justify-content: space-between"
-    >
+    <div class="post-title-and-date">
       <a class="article-link" href="{{ post.url }}"> {{ post.title }} </a>
       <p class="article-list-date">{{ post.date | date: "%B %-d, %Y" }}</p>
     </div>
     {{post.excerpt}}
+    <a href="{{ post.url }}">Keep reading</a>
   </li>
   {% endfor %}
 </ul>
 
 <div class="pagination">
   {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" class="previous"> Previous </a>
+  <a href="{{ paginator.previous_page_path }}" class="pagination-text">
+    Previous
+  </a>
   {% else %}
-  <span class="previous">Previous</span>
+  <span class="pagination-text">Previous</span>
   {% endif %}
-  <span class="page_number">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  <span class="pagination-text">
+    Page {{ paginator.page }} of {{ paginator.total_pages }}
   </span>
   {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  <a href="{{ paginator.next_page_path }}" class="pagination-text">Next</a>
   {% else %}
-  <span class="next">Next</span>
+  <span class="pagination-text">Next</span>
   {% endif %}
 </div>

@@ -1,22 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% if page.title %}{{ page.title }} – Loukidelis.com{% else %}Loukidelis.com{% endif %}</title>
+    <title>
+      {% if page.title %}{{ page.title }} – Loukidelis.com{% else
+      %}Loukidelis.com{% endif %}
+    </title>
     <link href="/assets/css/styles.css" rel="stylesheet" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P176X05K5L"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P176X05K5L"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-P176X05K5L');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-P176X05K5L");
     </script>
   </head>
   <body>
     <img
       class="background-image"
-      srcset="/assets/images/header-small.jpg 1024w, /assets/images/header.jpg 4096w"
+      srcset="
+        /assets/images/header-small.jpg 1024w,
+        /assets/images/header.jpg       4096w
+      "
       sizes="(max-width: 1000px) 1024px, 4096px"
       src="/assets/images/header.jpg"
     />
@@ -25,12 +36,12 @@
         <p class="home-link-title">David Loukidelis</p>
       </a>
     </header>
-    <main>
-      {{ content }}
-    </main>
+    <main>{{ content }}</main>
     <footer>
       <a href="/feed.xml" target="_blank">Atom feed</a>
-      <a href="https://www.lipchenko.com/" target="_blank">Art by Oleg Lipchenko</a>
+      <a href="https://www.lipchenko.com/" target="_blank"
+        >Art by Oleg Lipchenko</a
+      >
     </footer>
   </body>
 </html>

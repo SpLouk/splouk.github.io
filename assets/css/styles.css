@@ -8,6 +8,12 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-family: "Georgia", serif;
+  font-weight: normal;
+  margin: 0;
+}
+
 h1.article-title {
   font-size: calc(1.5em + 3vw);
   color: #aa4a47;
@@ -24,7 +30,8 @@ h1.section-title {
   margin-top: 48px;
 }
 
-p {
+p,
+li {
   line-height: 1.7;
 }
 
@@ -79,7 +86,7 @@ blockquote {
 .main-nav {
   display: grid;
   gap: 10vh 0;
-  padding: 10vh 0;
+  padding: 5vh 0;
 }
 
 main {
@@ -101,6 +108,7 @@ a.article-link {
   color: #aa4a47;
   text-shadow: #333 0.02em 0.02em;
   font-size: 2em;
+  text-decoration: none;
 }
 
 a.home-link {
@@ -125,6 +133,12 @@ p.article-list-date {
 p.article-date {
   color: #737373;
   margin: 0 0 32px 0;
+}
+
+.post-title-and-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 article.book-review {
@@ -218,36 +232,11 @@ div.big-image {
   div.big-image {
     padding: 0;
   }
-}
 
-button,
-input[type="submit"],
-input[type="reset"] {
-  border: none;
-  font: inherit;
-  outline: inherit;
-  cursor: pointer;
-  padding: 16px;
-  background: #61b0e8;
-  color: white;
-}
-button:hover,
-button:focus {
-  background: #326582;
-}
-
-p.subscribe-callout,
-div.pageclip-form__success {
-  margin-top: 0;
-  color: #737373;
-}
-
-form.pageclip-form--error > button {
-  background: #b24d3b;
-}
-
-form.pageclip-form--error > input {
-  border: 1px solid #b24d3b;
+  .post-title-and-date {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 input {
@@ -300,6 +289,24 @@ div.spacer {
   flex-basis: 315px;
 }
 
-li {
+.main-nav > li {
   list-style: none;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+}
+
+.pagination-text {
+  font-size: 1.2rem;
+}
+
+code {
+  font-family: monospace;
+  background-color: #f1f1f1;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
