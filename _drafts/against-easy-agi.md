@@ -4,7 +4,7 @@ title: "We Will Not Accidentally Create AGI"
 date: June 22, 2025
 ---
 
-_We need to give ourselves more credit; we are far more complex than we understand._
+\_We need to give ourselves more credit as complex systems.
 
 <p class="first-paragraph">
 Many lay people intuitively understand that LLMs like ChatGPT are not about to become an AGI by just feeding more compute to them. Yet people intimately involved with the technology, including prominent people in the AI business like Elon Musk and Sam Altman, continually proclaim that we are months or short years away from computer superintelligence. They seem to believe that the distance between current best LLMs and AGI is more compute, or perhaps some model tweaks, or at most one more theoretical advancement. For example, Elon Musk recently claimed in an <a href="https://www.youtube.com/watch?v=cFIlta1GkiE">interview with YCombinator</a> that "we're quite close to digital superintelligence. If it doesn't happen this year, then next year for sure". This exuberance regarding digital superintelligence is espoused by many prominent tech figures. You might say that of course AI CEOs will hype AI. Still, whatever these mens' motives, they are fanning the flames of an AI fanaticism is very real.
