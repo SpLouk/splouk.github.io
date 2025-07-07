@@ -1,5 +1,5 @@
 * {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Georgia", serif;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h2 {
 }
 
 h1.article-title {
-  font-size: calc(1.5em + 3vw);
+  font-size: 3em;
   color: #aa4a47;
   text-shadow: #333 0.02em 0.02em;
 }
