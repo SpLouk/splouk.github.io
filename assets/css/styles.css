@@ -22,7 +22,7 @@ h1.article-title {
 /* Prevent font from getting huge on large desktops */
 @media (min-width: 1920px) {
   h1.article-title {
-    font-size: 7em;
+    font-size: 5em;
   }
 }
 
@@ -71,7 +71,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  max-width: min(100vw, 1000px);
+  max-width: min(100vw, 1200px);
   margin-top: 20vh;
   box-sizing: border-box;
 }
@@ -90,7 +90,7 @@ blockquote {
 }
 
 main {
-  max-width: min(100vw, 1000px);
+  max-width: min(100vw, 1200px);
   background-color: white;
   padding: 5vh 5vw 0vh;
   display: flex;
@@ -257,7 +257,7 @@ footer {
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
-  max-width: min(100vw, 1000px);
+  max-width: min(100vw, 1200px);
   width: 100%;
   padding: 2vh 5vw 10vh;
   box-sizing: border-box;
@@ -308,4 +308,15 @@ code {
   background-color: #f1f1f1;
   padding: 2px 4px;
   border-radius: 4px;
+}
+
+td,
+th {
+  padding: 0.3rem 1rem;
+  border: 1px solid rgb(160 160 160 / 40%);
+  text-align: start;
+}
+
+table {
+  border-collapse: collapse;
 }
