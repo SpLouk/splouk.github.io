@@ -14,6 +14,8 @@ I built this app as a one-man team, while working another full time job. As a re
 
 This blog post is an overview of how I built the app, and some of the design decisions that I made along the way.
 
+<!--more-->
+
 <div class="hoot-image-container" >
   <img
     width="250"

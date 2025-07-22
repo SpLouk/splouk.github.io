@@ -319,6 +319,9 @@ code {
   padding: 2px 4px;
   border-radius: 4px;
 }
+code * {
+  font-family: monospace;
+}
 
 td,
 th {
