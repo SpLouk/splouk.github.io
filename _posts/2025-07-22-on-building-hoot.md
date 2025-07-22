@@ -37,6 +37,13 @@ I set out to create an iOS app. I have a background in web development, so React
 
 I used Ruby on Rails to build the server for this app. It is the web framework I am most familiar with, though I have used [NestJS](https://docs.nestjs.com/) in the past. I wanted to use Rails because I really like it. It's opinionated, mature, and Just Works. Plus, I had not used it in a few years and was excited to try out some of its newer features, such as the Solid Trifecta. Rails is an excellent web framework that makes things easy, and doesn't require a ton of overhead. As of today, production server uses <1GB of memory.
 
+Some other miscellaneous things I like about Rails:
+
+- ActiveJob backed by Solid Queue
+- ActiveStorage (make associating remote files with db tables easy)
+- Simple deployments with [Kamal](https://kamal-deploy.org/) and Docker
+- Multithreaded / multi-process HTTP server with Puma
+
 ## Authentication
 
 Ruby on Rails is a full stack web framework, which means it is designed for cookie authentication. When using it as an API with a mobile app client, another solution is needed. I decided to go with token auth. There are gems which can make this work for rails, such as devise. But in order to minimize dependencies and learn a bit about authentication, I decided to roll my own. Token authentication is actually pretty simple in theory:
@@ -90,7 +97,7 @@ Here is a simplified schema showing the most important tables in Hoot's database
 
 ![](/assets/images/on-building-hoot/schema.png "Diagram of Hoot's important db tables")
 
-All posts and prompts happen in the context of a group. Users may in many groups at once. The UX of the app allows a user to switch between groups easily.
+All posts and prompts happen in the context of a group. Users may belong to many groups at once. The UX of the app allows a user to switch between groups easily.
 
 ### Client Architecture
 
