@@ -212,6 +212,13 @@ div.big-image {
   padding: 0 64px;
 }
 
+.hoot-image-container {
+  display: flex;
+  gap: 32px;
+  padding: 16px;
+  justify-content: center;
+}
+
 @media (max-width: 480px) {
   article.book-review {
     flex-direction: column;
@@ -238,6 +245,9 @@ div.big-image {
   .post-title-and-date {
     flex-direction: column;
     align-items: start;
+  }
+  .hoot-image-container {
+    flex-direction: column;
   }
 }
 
