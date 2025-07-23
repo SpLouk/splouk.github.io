@@ -35,7 +35,7 @@ I set out to create an iOS app. I have a background in web development, so React
 
 ### Server
 
-I used Ruby on Rails to build the server for this app. It is the web framework I am most familiar with, though I have used [NestJS](https://docs.nestjs.com/) in the past. I wanted to use Rails because I really like it. It's opinionated, mature, and Just Works. Plus, I had not used it in a few years and was excited to try out some of its newer features, such as the Solid Trifecta. Rails is an excellent web framework that makes things easy, and doesn't require a ton of overhead. As of today, production server uses <1GB of memory.
+I used Ruby on Rails to build the server for this app. It is the web framework I am most familiar with, though I have used [NestJS](https://docs.nestjs.com/) in the past. I wanted to use Rails because I really like it. It's opinionated, mature, and Just Works. Plus, I had not used it in a few years and was excited to try out some of its newer features, such as the [Solid Trifecta](https://www.youtube.com/watch?v=FpfAu20I00A). Rails is an excellent web framework that makes things easy, and doesn't require a ton of overhead. As of today, my production server uses <1GB of memory.
 
 Some other miscellaneous things I like about Rails:
 
