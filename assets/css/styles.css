@@ -92,6 +92,7 @@ blockquote {
 }
 
 main {
+  width: 100%;
   max-width: min(100vw, 1200px);
   background-color: white;
   padding: 5vh 5vw 0vh;
@@ -195,19 +196,6 @@ p.photo-attribution {
   font-size: 10px;
   margin: 0;
   text-align: end;
-}
-
-a.home-banner-attribution {
-  position: absolute;
-  font-size: 10px;
-  color: #a8d8dd;
-  bottom: 8px;
-  right: 8px;
-  text-decoration: none;
-}
-a.home-banner-attribution:hover,
-a.home-banner-attribution:focus {
-  color: white;
 }
 
 div.big-image {
@@ -334,4 +322,34 @@ th {
 
 table {
   border-collapse: collapse;
+}
+
+.small-text {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Bluesky comments CSS */
+
+#bluesky-comments {
+  margin-top: 2em;
+}
+
+.bsky-comment {
+  border-left: 2px solid #ddd;
+  padding-left: 1em;
+  margin-left: calc(var(--depth, 0) * 1.5em);
+}
+
+.bsky-author {
+  font-weight: bold;
+}
+
+.bsky-content {
+  white-space: pre-wrap;
+}
+
+.bsky-timestamp {
+  font-size: 0.8em;
+  color: #666;
 }

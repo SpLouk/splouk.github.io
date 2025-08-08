@@ -9,3 +9,88 @@ layout: default
 <div class="article-content">
   {{ content }}
 </div>
+
+<!-- Bluesky comments -->
+{% if page.bluesky_cid %}
+  <div id="bluesky-comments">
+    <h3>Comments</h3>
+    <div class="bsky-comments-sub-header">
+      Leave a comment here by replying to this <a href="https://bsky.app/profile/spyr0s.bsky.social/post/{{ page.bluesky_cid }}">thread on Bluesky.</a>
+    </div>
+  </div>
+
+  <div class="small-text">Comments powered by <a href="https://bsky.app/">Bluesky</a> with inspo from <a
+      href="https://natalie.sh/posts/bluesky-comments/">natalie b.</a></div>
+
+  <script>
+    const did = '{{ site.bluesky_did }}';
+    const cid = '{{ page.bluesky_cid }}';
+    const blueskyAtUri = `at://${did}/app.bsky.feed.post/${cid}`;
+
+    async function fetchThread(uri) {
+      const endpoint = 'https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread';
+      const url = `${endpoint}?uri=${encodeURIComponent(uri)}`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error('Failed to fetch thread');
+      const data = await res.json();
+      return data.thread;
+    }
+
+    const MAX_DEPTH = 5;
+    function renderPost(post, container, depth = 0) {
+      if (!post || post.notFound || !post.post || depth > MAX_DEPTH) return;
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'bsky-comment';
+      wrapper.style.setProperty('--depth', depth); // for indenting via CSS
+
+      const author = document.createElement('p');
+      author.className = 'bsky-author';
+      author.textContent = post.post.author.handle || post.post.author.did;
+
+      const content = document.createElement('p');
+      content.className = 'bsky-content';
+      content.textContent = post.post.record.text;
+
+      const timestamp = document.createElement('p');
+      timestamp.className = 'bsky-timestamp';
+      timestamp.textContent = new Date(post.post.indexedAt).toLocaleString();
+
+      wrapper.appendChild(author);
+      wrapper.appendChild(content);
+      wrapper.appendChild(timestamp);
+      container.appendChild(wrapper);
+
+      if (post.replies && post.replies.length > 0) {
+        post.replies.forEach(reply => renderPost(reply, container, depth + 1));
+      }
+    }
+
+    async function loadComments() {
+      try {
+        const thread = await fetchThread(blueskyAtUri);
+        const container = document.getElementById('bluesky-comments');
+        if (!container) return;
+
+        if (!thread.replies?.length) {
+          const wrapper = document.createElement('p');
+          wrapper.className = 'bsky-no-comments';
+          wrapper.textContent = 'No comments yet. Join the conversation on Bluesky.';
+
+          container.appendChild(wrapper);
+        } else {
+          // Grab 50 replies
+          thread.replies.slice(0, 50).forEach((reply) => {
+            renderPost(reply, container);
+          })
+        }
+      } catch (e) {
+        console.error('Error loading Bluesky comments:', e);
+      }
+    }
+
+    loadComments();
+  </script>
+{% endif %}
+
+
