@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Adding Comments To This Blog With Bluesky"
-bluesky_cid:
+bluesky_cid: 3lvw4zv2yos2j
 ---
 
 <p class="first-paragraph">
@@ -13,4 +13,8 @@ bluesky_cid:
 - Many people have Bluesky accounts already. It is convenient to not have to make a new account to comment on my website.
 - Outsourcing the data hosting, account management, etc. to Bluesky is very nice.
 
-Getting this working was pretty simple (<100 lines of code, mostly written by ChatGPT). I'm not bothering with image support, linking back to bluesky (except at the top) or any of the other fancier stuff that natalie b. did yet. I may add that eventually, but I'm happy to support text responses only for now.
+Natalie used React to create the blog post UI, and her blog is powered by Astro. Getting this working in Jekyll with pure Javascript was pretty simple (<100 lines of code, mostly written by ChatGPT). I'm not bothering with image support, linking back to Bluesky (except at the top) or any of the other fancier stuff that natalie b. did for now. I may improve on this eventually, but I'm happy to support text responses only for now.
+
+The only friction with this solution is that I have to go back and edit my post's [front matter](https://jekyllrb.com/docs/front-matter/) with the CID after creating the blog post and linking to it from Bluesky, but this isn't too much hassle.
+
+You can see the code used to fetch and render Bluesky comments on this site's [github repo](https://github.com/SpLouk/splouk.github.io/blob/main/_layouts/article.html#L13).
