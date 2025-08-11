@@ -1,6 +1,8 @@
 ---
 layout: article
 title: "Is the AI Bubble About to Burst?"
+tags: AI
+bluesky_cid: 3lw3pn73jnc23
 ---
 
 <p class="first-paragraph">

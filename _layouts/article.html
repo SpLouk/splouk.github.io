@@ -14,9 +14,9 @@ layout: default
 {% if page.bluesky_cid %}
   <div id="bluesky-comments">
     <h3>Comments</h3>
-    <div class="bsky-comments-sub-header">
-      Leave a comment here by replying to this <a href="https://bsky.app/profile/spyr0s.bsky.social/post/{{ page.bluesky_cid }}">thread on Bluesky.</a>
-    </div>
+    <p class="bsky-comments-subheader">
+    Leave a comment here by replying to this <a href="https://bsky.app/profile/spyr0s.bsky.social/post/{{ page.bluesky_cid }}">thread on Bluesky.</a>
+    </p>
   </div>
 
   <div class="small-text">Comments powered by <a href="https://bsky.app/">Bluesky</a> with inspo from <a
@@ -72,13 +72,7 @@ layout: default
         const container = document.getElementById('bluesky-comments');
         if (!container) return;
 
-        if (!thread.replies?.length) {
-          const wrapper = document.createElement('p');
-          wrapper.className = 'bsky-no-comments';
-          wrapper.textContent = 'No comments yet. Join the conversation on Bluesky.';
-
-          container.appendChild(wrapper);
-        } else {
+        if (thread.replies?.length) {
           // Grab 50 replies
           thread.replies.slice(0, 50).forEach((reply) => {
             renderPost(reply, container);

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "On Building Hoot"
+tags: web
 ---
 
 <p class="first-paragraph">

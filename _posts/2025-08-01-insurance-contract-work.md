@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "A Year of Working Contract"
+tags: web
 ---
 
 <p class="first-paragraph">

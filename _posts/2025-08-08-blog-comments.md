@@ -2,6 +2,7 @@
 layout: article
 title: "Adding Comments To This Blog With Bluesky"
 bluesky_cid: 3lvw4zv2yos2j
+tags: web
 ---
 
 <p class="first-paragraph">

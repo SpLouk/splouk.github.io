@@ -340,6 +340,10 @@ table {
   margin-left: calc(var(--depth, 0) * 1.5em);
 }
 
+.bsky-comments-subheader {
+  margin-top: 0;
+}
+
 .bsky-author {
   font-weight: bold;
 }

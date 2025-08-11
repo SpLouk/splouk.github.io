@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "We Will Not Accidentally Create AGI"
+tags: AI
 ---
 
 _We need to give ourselves more credit as complex systems._
