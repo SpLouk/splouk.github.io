@@ -104,6 +104,8 @@ main {
 
 a {
   text-decoration: underline;
+  text-decoration-color: #ccc;
+  text-underline-offset: 20%;
   color: black;
 }
 
@@ -136,7 +138,9 @@ p.article-list-date {
 
 p.article-date {
   color: #737373;
-  margin: 0 0 32px 0;
+  padding: 0 0 1rem 0;
+  margin: 0;
+  border-bottom: 0.5px solid #ccc;
 }
 
 .post-title-and-date {
@@ -330,11 +334,6 @@ table {
 }
 
 /* Bluesky comments CSS */
-
-#bluesky-comments {
-  margin-top: 2em;
-}
-
 .bsky-comment {
   border-left: 2px solid #ddd;
   padding-left: 1em;
