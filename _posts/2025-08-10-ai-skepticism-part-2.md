@@ -6,7 +6,7 @@ bluesky_cid: 3lw3pn73jnc23
 ---
 
 <p class="first-paragraph">
-  I wanted to write a follow-up to my <a href="{% link _posts/2025-07-06-against-easy-agi.md %}">post about AGI</a> with a second part. I originally wanted to just document some examples of prominent people saying or strongly implying that AGI is imminent, to convince myself and my imagined readers that this view is pervasive. For example, here is AI researcher, often called the "Godfather of AI", Geoffrey Hinton <a href="https://www.youtube.com/watch?v=IkdziSLYzHw">speculating about AGI while veiling this as disinterested scientific analysis</a>. Here is the co-founder of Anthropic <a href="https://www.youtube.com/watch?v=p8Jx4qvDoSo">speaking matter-of-factly about creating human-level AI.</a> However, I've also started to wonder if we've hit peak AI hype.</p>
+  I wanted to write a follow-up to my <a href="{% link _posts/2025-07-06-against-easy-agi.md %}">post about AGI</a> with a second part. I originally wanted to just document some examples of prominent people saying or strongly implying that AGI is imminent, to convince myself and my imagined readers that this view is pervasive. For example, here is AI researcher Geoffrey Hinton, often called the "Godfather of AI", <a href="https://www.youtube.com/watch?v=IkdziSLYzHw">speculating about AGI while veiling this as disinterested scientific analysis</a>. Here is the co-founder of Anthropic <a href="https://www.youtube.com/watch?v=p8Jx4qvDoSo">speaking matter-of-factly about creating human-level AI.</a> However, I've also started to wonder if we've hit peak AI hype, and I am going to write about that instead.</p>
 
 <!--more-->
 
