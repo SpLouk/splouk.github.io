@@ -27,6 +27,7 @@ url: "https://loukidelis.com" # the base hostname & protocol for your site, e.g.
 twitter_username: DavidLoukidelis
 github_username: splouk
 bluesky_did: spyr0s.bsky.social
+og_image: /assets/images/header-small.jpg
 
 plugins:
   - jekyll-feed
