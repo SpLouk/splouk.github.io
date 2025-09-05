@@ -2,6 +2,7 @@
 layout: article
 title: "Sourdough Bread Notes"
 tags: Sourdough
+og_image: /assets/images/sourdough-notes/IMG_0311.jpeg
 ---
 
 <p class="first-paragraph">

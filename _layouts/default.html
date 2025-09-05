@@ -7,6 +7,9 @@
       {% if page.title %}{{ page.title }} – Loukidelis.com{% else
       %}Loukidelis.com{% endif %}
     </title>
+    {% if page.og_image or site.og_image %}
+    <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+    {% endif %}
     <link href="/assets/css/styles.css" rel="stylesheet" />
     <script
       async
