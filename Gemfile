@@ -2,8 +2,10 @@ source 'https://rubygems.org'
 
 group :jekyll_plugins do
   gem 'github-pages'
-  gem 'jekyll-feed', '~> 0.12'
+  gem 'jekyll-feed', '~> 0.17'
   gem 'jekyll-paginate', '~> 1.1'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

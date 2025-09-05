@@ -32,9 +32,13 @@ og_image: /assets/images/header-small.jpg
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 paginate: 5
 excerpt_separator: <!--more-->
+
+lang: en_CA
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
