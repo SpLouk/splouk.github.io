@@ -120,7 +120,7 @@ Let the loaf cool completely (~45mins) before cutting into it.
 
 ## Misc tips
 
-- dough is easier to manipulate with wet hands; your fingers won’t stick to it
+- Dough is easier to manipulate with wet hands; your fingers won’t stick to it
 - A kitchen scale is essential. Mass measurements (grams) are more accurate than volume measurements
 - I do horizontal-ish scores into the sides of the loaf, which creates dramatic “ears” that explode upward during baking. It’s worth experimenting with different scoring techniques.
 - I use all-purpose flour. Bread flour has more gluten and can create a stronger dough which will rise more, but I find that all-purpose works well and I don’t feel like having two bags of flour in our small pantry.
