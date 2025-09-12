@@ -12,7 +12,7 @@
     {% feed_meta %}
     {% seo %}
     {% if page.og_image or site.og_image %}
-      <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+      <meta property="og:image" content="{% if page.og_image %}{{ page.og_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% endif %}">
     {% endif %}
   </head>
   <body>
