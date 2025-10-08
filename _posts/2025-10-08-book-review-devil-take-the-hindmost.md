@@ -6,7 +6,7 @@ tags: [AI, books]
 og_image: /assets/images/book-review-devil-take-the-hindmost/Nasdaq-1994-2004.png
 ---
 
-> “Men, it has been well said, think in herds; it will be seen that they go mad in herds, while they only recover their senses slowly, one by one.”
+> Men, it has been well said, think in herds; it will be seen that they go mad in herds, while they only recover their senses slowly, one by one.
 
 ― Charles MacKay, Extraordinary Popular Delusions and the Madness of Crowds (1841)
 
