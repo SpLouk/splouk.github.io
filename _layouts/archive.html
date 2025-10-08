@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
+
+<ul class="main-nav">
+  {% for post in page.posts %}
+  <li>
+    <div class="post-title-and-date">
+      <a class="article-link" href="{{ post.url }}"> {{ post.title }} </a>
+      <p class="article-list-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

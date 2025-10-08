@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 group :jekyll_plugins do
   gem 'github-pages'
+  gem 'jekyll-archives'
   gem 'jekyll-feed', '~> 0.17'
   gem 'jekyll-paginate', '~> 1.1'
   gem 'jekyll-seo-tag'

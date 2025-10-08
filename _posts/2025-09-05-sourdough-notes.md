@@ -2,7 +2,7 @@
 layout: article
 title: "Sourdough Bread Notes"
 description: I compiled some notes for a friend to serve as a companion to the “Basic Country Loaf” recipe from Tartine bread. I thought I'd publish them here as well.
-tags: Sourdough
+tags: sourdough
 og_image: /assets/images/sourdough-notes/IMG_0311.jpeg
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: 'On "Zen and the Art of Motorcycle Maintenance"'
+tags: books
 ---
 
 <p class="first-paragraph">

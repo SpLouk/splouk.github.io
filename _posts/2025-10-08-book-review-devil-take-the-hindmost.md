@@ -2,7 +2,7 @@
 layout: article
 title: "Book Review: Devil Take the Hindmost"
 description: A reflection on the history of speculation by Edward Chancellor
-tags: AI,books
+tags: [AI, books]
 og_image: /assets/images/book-review-devil-take-the-hindmost/Nasdaq-1994-2004.png
 ---
 

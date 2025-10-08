@@ -31,6 +31,21 @@
       </a>
     </header>
     <main>{{ content }}</main>
+    <section class="tag-section">
+      {% assign all_tags = site.tags | sort %}
+      <p style="margin: 0">
+      Tags
+      </p>
+      <ul class="tag-list">
+        {% for tag in all_tags %}
+        <li>
+          <a href="/tag/{{ tag[0] | slugify }}" class="tag-link">
+            {{ tag[0] }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
     <footer>
       <a href="/feed.xml" target="_blank">Atom feed</a>
       <a href="https://www.lipchenko.com/" target="_blank">Art by Oleg Lipchenko</a>

@@ -34,9 +34,14 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-archives
 
 paginate: 5
 excerpt_separator: <!--more-->
+
+jekyll-archives:
+  enabled:
+    - tags
 
 lang: en_CA
 # Exclude from processing.
