@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "CulinaryWiki"
+tags: web
 ---
 
 I [created a wiki](https://culinarywiki.org/wiki/Main_Page) which is intended to be a culinary encyclopedia. The idea came to me when I wanted to know about the culinary properties of rosemary--how it should be used, what culinary heritage it originates from, etc. The [Wikipedia page for rosemary](https://en.wikipedia.org/wiki/Rosemary) is too generic and not tailored towards culinary info. I was surprised that something like CulinaryWiki didn't already exist.

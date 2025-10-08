@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "A Year of Working Contract"
+description: A description of the time I spent working on a contract for a large Canadian insurance company, with some of the challenges and technical decisions made.
 tags: web
 ---
 

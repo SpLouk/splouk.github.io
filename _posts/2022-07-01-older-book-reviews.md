@@ -2,8 +2,10 @@
 layout: article
 title: "Older book reviews"
 date: 2022-07-01
+tags: books
 categories: old
 ---
+
 <p style='margin-bottom: 64px'>
   You can find a more complete list of what I've read on
   <a href="https://www.goodreads.com/user/show/53192993-dave" target="_blank"

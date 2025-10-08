@@ -2,6 +2,7 @@
 layout: article
 title: "Book Review: Seeing Like a State"
 date: 2022-09-16
+tags: books
 categories: old
 ---
 

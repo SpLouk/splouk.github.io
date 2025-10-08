@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "On Building Hoot"
+description: The story of building my first iOS app.
 tags: web
 ---
 
