@@ -39,6 +39,7 @@ li {
 
 ul {
   margin: 0;
+  padding: 0;
 }
 
 .home-link-title {
@@ -78,6 +79,17 @@ header {
   box-sizing: border-box;
 }
 
+.index-main-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.index-main-content aside {
+  position: sticky;
+  top: 2rem;
+}
+
 blockquote {
   margin: 0;
   padding: 0 24px;
@@ -85,17 +97,11 @@ blockquote {
   line-height: 1.5;
 }
 
-.main-nav {
-  display: grid;
-  gap: 10vh 0;
-  padding: 5vh 0;
-}
-
 main {
   width: 100%;
   max-width: min(100vw, 1200px);
   background-color: white;
-  padding: 5vh 5vw 0vh;
+  padding: 2vh 2vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -241,6 +247,14 @@ div.big-image > img {
     flex-direction: column;
   }
 }
+@media (max-width: 810px) {
+  .index-main-content {
+    flex-direction: column;
+  }
+  .index-main-content aside {
+    position: initial;
+  }
+}
 
 input {
   font: inherit;
@@ -260,7 +274,7 @@ footer {
   justify-content: center;
   max-width: min(100vw, 1200px);
   width: 100%;
-  padding: 0 5vw 10vh;
+  padding: 0 5vw 5vh;
   box-sizing: border-box;
   background-color: white;
 }
@@ -284,13 +298,10 @@ footer > a {
 }
 
 .tag-list {
-  width: min(100vw, 254px);
   display: flex;
   list-style: none;
   column-gap: 0.5rem;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   padding: 0;
 }
 
@@ -332,6 +343,7 @@ div.spacer {
   justify-content: center;
   gap: 24px;
   font-size: 0.9rem;
+  margin-top: 2vh;
 }
 
 code {

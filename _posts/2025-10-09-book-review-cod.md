@@ -5,7 +5,7 @@ tags: books
 ---
 
 <div class="big-image">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Atlantic_cod.jpg" alt="Atlantic cod.jpg" height="255" width="600">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Atlantic_cod.jpg">
   <p class="image-caption" style="font-size: 0.8rem;">Atlantic cod. Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=34661">Link</a></p>
 </div>
 
