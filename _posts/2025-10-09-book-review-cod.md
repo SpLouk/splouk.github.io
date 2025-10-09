@@ -13,9 +13,9 @@ tags: books
 The fisherman of Newfoundland never thought that the cod stocks could run out. With the benefit of hindsight, their folly seems obvious, but as a fisherman in the 20th century, it would be hard to imagine the extinction of cod. Cod had been plentiful off the coast of Newfoundland since Europeans began fishing it in the 1490s (this book speculates that Europeans--Basques and the British--were fishing in North America before Columbus sailed there in 1491, though this can't be proven). Cod lay 9000 eggs at a time. They had disappeared in certain locations many times before, only to reappear somewhere else. It was not thought that humans could possibly overfish cod to the point of depletion.
 </p>
 
-<!--more-->
-
 The depletion of the Grand Banks (Newfoundland) cod fishery in the late 1980s could be called a black swan event. As someone who was born after the cod fishing moratorium was effected in 1992, reading this book helped me to appreciate just how surprising this was. The most economically important fish of all time, which had for hundreds of years been the main staple of many Europeans' diets and contributed to the European settlement of North America, was gone.
+
+<!--more-->
 
 This passage describes the attitude towards waning cod numbers in the late 1980s:
 
