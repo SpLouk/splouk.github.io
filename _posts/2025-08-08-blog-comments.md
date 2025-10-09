@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Adding Comments To This Blog With Bluesky"
+description: Using pure Javascript and the Bluesky API to create cheap and simple blog comment support.
 bluesky_cid: 3lvw4zv2yos2j
 tags: web
 ---

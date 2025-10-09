@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "CulinaryWiki"
+description: A wiki for culinary knowledge.
 tags: web
 ---
 
