@@ -12,28 +12,76 @@
     {% feed_meta %}
     {% seo %}
     {% if page.og_image or site.og_image %}
-      <meta property="og:image" content="{% if page.og_image %}{{ page.og_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+    <meta property="og:image" content="{% if page.og_image %}{{ page.og_image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% endif %}">
     {% endif %}
   </head>
   <body>
     <img
-      class="background-image"
-      srcset="
-        /assets/images/header-small.jpg 1280w,
-        /assets/images/header.jpg       2685w
-      "
-      sizes="(max-width: 1000px) 1280px, 2685px"
-      src="/assets/images/header.jpg"
-    />
+        class="background-image"
+        srcset="
+                /assets/images/header-small.jpg 1280w,
+                /assets/images/header.jpg       2685w
+                "
+        sizes="(max-width: 1000px) 1280px, 2685px"
+        src="/assets/images/header.jpg"
+        />
     <header>
       <a class="home-link" href="/index.html">
         <p class="home-link-title">David Loukidelis</p>
       </a>
     </header>
-    <main>{{ content }}</main>
+    <main>
+      <aside>
+        <p style="margin: 0;">
+        I am a software engineer by trade, available for freelance and consulting.
+        These are my writings, <a href="/tag/web">professional</a>
+        and otherwise. You can also find me on
+        <a href="https://bsky.app/profile/spyr0s.bsky.social" target="_blank"
+                                                              >Bluesky</a
+                                                            >
+                                                            and <a href="https://github.com/splouk" target="_blank">Github</a>.
+        </p>
+        <p style="margin-bottom: 0">Browse posts by topic:</p>
+        {% assign all_tags = site.tags | sort %}
+        <ul class="tag-list">
+          {% for tag in all_tags %}
+          <li>
+            <a href="/tag/{{ tag[0] | slugify }}" class="tag-link">
+              {{ tag[0] }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </aside>
+      <div style="width: 100%">
+        {{ content }}
+      </div>
+    </main>
     <footer>
-      <a href="/feed.xml" target="_blank">Atom feed</a>
-      <a href="https://www.lipchenko.com/" target="_blank">Art by Oleg Lipchenko</a>
+      {% if paginator.total_pages > 0 %}
+      <div class="pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="pagination-text">
+          Previous
+        </a>
+        {% else %}
+        <span class="pagination-text">Previous</span>
+        {% endif %}
+        <span class="pagination-text">
+          Page {{ paginator.page }} of {{ paginator.total_pages }}
+        </span>
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="pagination-text">Next</a>
+        {% else %}
+        <span class="pagination-text">Next</span>
+        {% endif %}
+      </div>
+      {% endif %}
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/feed.xml" target="_blank">Atom feed</a>
+        <a href="https://www.lipchenko.com/" target="_blank">Art by Oleg Lipchenko</a>
+      </div>
     </footer>
   </body>
 </html>

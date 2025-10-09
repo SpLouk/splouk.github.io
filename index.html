@@ -3,58 +3,15 @@ layout: default
 title: Loukidelis.com
 ---
 
-<div class="index-main-content">
-  <aside>
-    <p style="margin: 0;">
-    I am a software engineer by trade, available for freelance and consulting.
-    These are my writings, <a href="/tag/web">professional</a>
-    and otherwise. You can also find me on
-    <a href="https://bsky.app/profile/spyr0s.bsky.social" target="_blank"
-                                                          >Bluesky</a
-                                                        >
-                                                        and <a href="https://github.com/splouk" target="_blank">Github</a>.
-    </p>
-    <p style="margin-bottom: 0">Browse posts by topic:</p>
-    {% assign all_tags = site.tags | sort %}
-    <ul class="tag-list">
-      {% for tag in all_tags %}
-      <li>
-        <a href="/tag/{{ tag[0] | slugify }}" class="tag-link">
-          {{ tag[0] }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </aside>
-  <div>
-    <ul class="main-nav">
-      {% for post in paginator.posts %}
-      <li>
-        <div class="post-title-and-date">
-          <a class="article-link" href="{{ post.url }}"> {{ post.title }} </a>
-          <p class="article-list-date">{{ post.date | date: "%B %-d, %Y" }}</p>
-        </div>
-        {{post.excerpt}}
-        <a style="display: block; text-align: center; margin: 2rem 0;" href="{{ post.url }}">Keep reading</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-<div class="pagination">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="pagination-text">
-        Previous
-      </a>
-      {% else %}
-      <span class="pagination-text">Previous</span>
-      {% endif %}
-      <span class="pagination-text">
-        Page {{ paginator.page }} of {{ paginator.total_pages }}
-      </span>
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="pagination-text">Next</a>
-      {% else %}
-      <span class="pagination-text">Next</span>
-      {% endif %}
+<ul class="main-nav">
+  {% for post in paginator.posts %}
+  <li>
+    <div>
+      <a class="article-link" href="{{ post.url }}"> {{ post.title }} </a>
+      <p class="article-date">{{ post.date | date: "%B %-d, %Y" }}</p>
     </div>
+    {{post.excerpt}}
+    <a style="display: block; text-align: center; margin: 2rem 0;" href="{{ post.url }}">Keep reading</a>
+  </li>
+  {% endfor %}
+</ul>
