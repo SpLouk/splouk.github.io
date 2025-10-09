@@ -3,7 +3,6 @@ layout: article
 title: "Older book reviews"
 date: 2022-07-01
 tags: books
-categories: old
 ---
 
 <p style='margin-bottom: 64px'>

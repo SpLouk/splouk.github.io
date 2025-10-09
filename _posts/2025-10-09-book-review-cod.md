@@ -2,6 +2,7 @@
 layout: article
 title: "Book Review: Cod: A Biography of the Fish that Changed the World"
 tags: books
+og_image: https://upload.wikimedia.org/wikipedia/commons/a/a3/Atlantic_cod.jpg
 ---
 
 <div class="big-image">

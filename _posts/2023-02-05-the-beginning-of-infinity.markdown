@@ -3,7 +3,6 @@ layout: article
 title: "Book Review: David Deutsch, The Beginning of Infinity"
 date: February 5, 2023
 tags: books
-categories: old
 ---
 
 <p>

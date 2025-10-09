@@ -2,7 +2,6 @@
 layout: article
 title: "The Breadmakers (short story)"
 date: August 14, 2022
-categories: old
 ---
 
 <blockquote style="margin-top: 24px">

@@ -2,7 +2,6 @@
 layout: article
 title: "Alone on the Playground"
 date: January 27, 2023
-categories: old
 ---
 
 <p>

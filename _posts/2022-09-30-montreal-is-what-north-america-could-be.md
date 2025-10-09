@@ -3,7 +3,6 @@ layout: article
 title: "Montreal is What North America Could Be"
 date: 2022-09-30
 tags: cities
-categories: old
 ---
 
 <p class="first-paragraph">

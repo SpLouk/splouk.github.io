@@ -2,7 +2,6 @@
 layout: article
 title: "On Land Ownership"
 date: 2022-08-19
-categories: old
 ---
 
 <blockquote>
@@ -261,4 +260,3 @@ categories: old
     thing.</em
   >
 </p>
-

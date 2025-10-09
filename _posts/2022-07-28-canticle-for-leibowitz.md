@@ -3,7 +3,6 @@ layout: article
 title: 'On "A Canticle for Leibowitz"'
 date: 2022-07-28
 tags: books
-categories: old
 ---
 
 <blockquote>

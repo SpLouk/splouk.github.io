@@ -2,7 +2,6 @@
 layout: article
 title: "The Bear is a Breath of Fresh Air for TV"
 date: 2022-08-30
-categories: old
 ---
 
 <p>

@@ -2,7 +2,6 @@
 layout: article
 title: "Music is Dead; Long Live Music"
 date: 2022-11-28
-categories: old
 ---
 
 <p>It’s all folk music now.</p>
