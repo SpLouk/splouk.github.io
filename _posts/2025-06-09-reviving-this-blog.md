@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Reviving this blog"
+tags: web
 ---
 
 <p class="first-paragraph">

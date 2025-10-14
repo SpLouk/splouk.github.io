@@ -11,8 +11,8 @@ tags: sourdough
   results were inconsistent and often inedible. This is how some of the early
   loaves I made looked:
 </p>
-<div class="responsive-row">
-  <div class="left-image">
+<div class="hoot-image-container">
+  <div>
     <img src="/assets/images/sourdough/IMG_1592.jpg" alt="This loaf went to my hens." />
     <p class="image-caption">This loaf went to my hens.</p>
   </div>
