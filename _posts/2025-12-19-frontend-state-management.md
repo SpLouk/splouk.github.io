@@ -22,7 +22,7 @@ Modern javascript frameworks come with data fetching solutions. For example, [Sv
 
 ## What is addressability
 
-Web pages are accessed using **U**niversal **R**esource **L**ocators, or URLs. As implied by the name, the URL points to a specific resource provided by your website. In other words, it is an address -- a way to communicate about where something is. When deciding if some state should be addressable, ask yourself: Should this state persist if I bookmark this page for later? Or if I share the link to this page with a friend? For example, consider a page that shows a list or grid of similar items, where the user can filter the items based on certain qualities. Frontend developers often use state to store filter selections, but using the URL's search parameters is preferable for addressability. Imagine an ecommerce site that sells fruit. A URL for this site might look like: `example.com/shop/apples?colour=red`. If I share this link with my friend, they will know I meant to show them red apples. Other examples of state that should be addressable include:
+Web pages are accessed using **U**niversal **R**esource **L**ocators, or URLs.<a class='footnote-link' href="#Note1">1</a> As implied by the name, the URL points to a specific resource provided by your website. In other words, it is an address: a way to communicate about where something is. When deciding if some state should be addressable, ask yourself: Should this state persist if I bookmark this page for later? Or if I share the link to this page with a friend? For example, consider a page that shows a list or grid of similar items, where the user can filter the items based on certain qualities. Frontend developers often use state to store filter selections, but using the URL's search parameters is preferable for addressability. Imagine an ecommerce site that sells fruit. A URL for this site might look like: `example.com/shop/apples?colour=red`. If I share this link with my friend, they will know I meant to show them red apples. Other examples of state that should be addressable include:
 
 - Pagination
 - Search queries
@@ -41,3 +41,14 @@ Other benefits of addressability:
 ## Form Data
 
 Similar to server data, modern frameworks have idiomatic solutions for form management. If you aren't using a framework, use a form library like [react-hook-form](https://react-hook-form.com/). Managing form state manually is likely to result in overly verbose code, while using a library or framework will result in more declarative, readable code. These tools will also help you to follow best practices for semantic HTML.
+
+### When to use Forms
+
+`<form>` should be used when your user needs to submit input. Often, this means they are mutating some data. For example, to allow a user to update their address, you would show them an address form. Most websites use forms for search inputs. While you should consider using a form any time a user is entering input into your website, you might not be able to use forms in all cases. For example, a rich text editor like an email composer could not be implemented using forms. In general, a form should be the first tool of choice for collecting user input.<a class='footnote-link' href="#Note2">2</a>
+
+<hr />
+
+<p id='Note1' class='footnote'>1. I know URL officially stands for uniform resource locator, but "universal" works better for the point.</p>
+
+<p id='Note2' class='footnote'>2. <a href='https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms' target='_blank'>
+MDN has a good guide on form building.</a></p>

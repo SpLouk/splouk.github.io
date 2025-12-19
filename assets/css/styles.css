@@ -1,3 +1,8 @@
+:root {
+  --main-accent-colour: #aa4a47;
+  --secondary-text: #737373;
+}
+
 * {
   font-family: "Georgia", serif;
 }
@@ -24,7 +29,7 @@ h3 {
 
 h1.article-title {
   font-size: 2em;
-  color: #aa4a47;
+  color: var(--main-accent-colour);
   text-shadow: #333 0.02em 0.02em;
 }
 
@@ -101,22 +106,49 @@ main > aside {
   top: 2rem;
   max-width: 200px;
   flex-shrink: 0;
-  color: #737373;
+  color: var(--secondary-text);
 }
 main > aside a {
-  color: #737373;
+  color: var(--secondary-text);
 }
 
 a {
   text-decoration: underline;
-  text-decoration-color: #737373;
+  text-decoration-color: var(--secondary-text);
   text-underline-offset: 20%;
   color: black;
+  word-break: break-all;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--secondary-text);
+  color: var(--secondary-text);
+  overflow: visible;
+  text-align: center;
+  height: 1px;
+  margin: 2rem 0;
+}
+
+hr::after {
+  background: white;
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  top: -11px;
+}
+
+.footnote {
+  color: var(--secondary-text);
+}
+
+.footnote-link {
+  vertical-align: super;
 }
 
 a.article-link {
   font-family: "Georgia", serif;
-  color: #aa4a47;
+  color: var(--main-accent-colour);
   text-shadow: #333 0.02em 0.02em;
   font-size: 2em;
   text-decoration: none;
@@ -288,7 +320,7 @@ p.first-paragraph::first-letter {
   font-weight: bold;
   margin-right: 9px;
   color: #479aaa;
-  text-shadow: #aa4a47 0.05em 0.05em;
+  text-shadow: var(--main-accent-colour) 0.05em 0.05em;
 }
 
 p.first-paragraph {
