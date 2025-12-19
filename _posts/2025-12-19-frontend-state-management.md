@@ -18,7 +18,7 @@ Sometimes, state is used when URL search params should be used instead. In moder
 
 ## Server Data
 
-Modern javascript frameworks come with data fetching solutions. For example, [Sveltekit load](https://svelte.dev/docs/kit/load). For a stand-alone library, I like [Tanstack Query](https://tanstack.com/query/), which manages fetching, deduplication, invalidation, and more. There is absolutely no reason for you to be managing server data manually on the client, you will save yourself many headaches by using a framework or a data fetching library.
+Modern javascript frameworks come with data fetching solutions. For example, [SvelteKit load](https://svelte.dev/docs/kit/load). For a stand-alone library, I like [Tanstack Query](https://tanstack.com/query/), which manages fetching, deduplication, invalidation, and more. There is absolutely no reason for you to be managing server data manually on the client, you will save yourself many headaches by using a framework or a data fetching library.
 
 ## What is addressability
 
@@ -44,7 +44,7 @@ Similar to server data, modern frameworks have idiomatic solutions for form mana
 
 ### When to use Forms
 
-`<form>` should be used when your user needs to submit input. Often, this means they are mutating some data. For example, to allow a user to update their address, you would show them an address form. Most websites use forms for search inputs. While you should consider using a form any time a user is entering input into your website, you might not be able to use forms in all cases. For example, a rich text editor like an email composer could not be implemented using forms. In general, a form should be the first tool of choice for collecting user input.<a class='footnote-link' href="#Note2">2</a>
+`<form>` should be used when your user needs to submit input. Often, this means they are mutating some data. For example, to allow a user to update their address, you would show them an address form. Most websites use forms for search inputs. While you should consider using a form any time a user is entering input into your website, you might not be able to use forms in all cases. For example, a rich text editor like an email composer might be awkward to implement as a form. In general, a form should be the first tool of choice for collecting user input.<a class='footnote-link' href="#Note2">2</a>
 
 <hr />
 
