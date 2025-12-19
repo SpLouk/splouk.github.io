@@ -117,7 +117,10 @@ a {
   text-decoration-color: var(--secondary-text);
   text-underline-offset: 20%;
   color: black;
-  word-break: break-all;
+}
+
+code {
+  overflow-wrap: break-word;
 }
 
 hr {

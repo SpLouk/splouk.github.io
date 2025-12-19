@@ -26,7 +26,7 @@ Web pages are accessed using **U**niversal **R**esource **L**ocators, or URLs.<a
 
 - Pagination
 - Search queries
-- Addressing a specific tab or part of a page. Wikipedia does this well. E.g. <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#Syntax>, this link specifically addresses the section about URL syntax.
+- Addressing a specific tab or part of a page. Wikipedia does this well. E.g. `https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#Syntax`, this link specifically addresses the section about URL syntax.
 - Linking to a form with some data pre-filled (e.g. `foo.com/register?country=CAN`)
 - Selections (e.g. `inbox?selected=msg_456`)
 
