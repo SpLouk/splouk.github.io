@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Learning after AI"
+title: "Education after ChatGPT"
 tags: AI
 ---
 
