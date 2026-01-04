@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Learning in the AI age"
+title: "Learning after AI"
 tags: AI
 ---
 
