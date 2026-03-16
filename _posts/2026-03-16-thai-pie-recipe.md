@@ -66,7 +66,7 @@ The first thing to do is start the potatoes. The potatoes add satisfying starch 
 
 While your potatoes are boiling, heat your cooking oil in a pot. Add your diced onions, a pinch of salt and the lemongrass stalk. Cook until the onions are translucent (5-10 mins).
 
-Add curry paste, garlic, minced kaffir lime leaves, and ginger if using. Cook for 45 seconds.
+Add curry paste, garlic, minced kaffir lime leaves, and ginger if using. Cook for one minute.
 
 Add 3/4 cup of beer if you're using it. Alternatively, you can add some starchy potato water at this point.
 
@@ -86,7 +86,7 @@ The filling should cool almost completely before you bake your pie. When I make 
 
 <div class="big-image">
   <img src="/assets/images/thai-pie-recipe/pie-filling-3.png" alt="" />
-  <p class="image-caption">Mixture after cooking down for 45 minutes</p>
+  <p class="image-caption">Mixture after cooking off the liquid</p>
 </div>
 
 ## Baking
@@ -119,6 +119,6 @@ Allow the pie to cool for at least 15 minutes before cutting into it.
 
 ## Notes
 
-This recipe can take some time and might be best for a weekend afternoon, especially the first time you make it. The filling can be made in about an hour but must be cooled before it is used in a pie. If you want to spread it across two days, make the filling, cool it in the fridge overnight, and then bake your pie the next day.
+This recipe can take some time and might be best for a weekend afternoon, especially the first time you make it. The filling can be made in about an hour and a half but must be cooled before it is used in a pie. If you want to spread it across two days, make the filling, cool it in the fridge overnight, and then bake your pie the next day.
 
 I like to make enough filling for 2-4 pies, separate it into 600g portions, and freeze it. Then it is easy to thaw a portion in the fridge overnight and bake a pie for dinner.
